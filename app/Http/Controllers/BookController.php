@@ -4,25 +4,26 @@ use Illuminate\Http\Request;
 use App\Book;
     class BookController extends Controller
     {
-        /**
-         * Display a listing of the resource.
-         *
-         * @return \Illuminate\Http\Response
-         */
+
+         public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
         public function index()
         {
             //Show all employees from the database and return to view
             $books = Book::all();
-            return view('home',['books'=>$books]);
+            return view('homepage',['books'=>$books]);
         }
        
         public function AddtoCart($id)
         {
             //Find the employee
           // $book = Book::find($id);
-             $book = Book::all();
+            // $book = Book::all();
            // print_r($book);
-          // $book = Book::all();
+           $book = Book::all();
             return view('book.cart',['book'=>$book] );
             
         }

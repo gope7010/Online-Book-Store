@@ -7,7 +7,10 @@ use App\Book;
 
 class BuyController extends Controller
 {
-   
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
 
      public function buying($id)
         {

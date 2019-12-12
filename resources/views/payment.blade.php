@@ -13,13 +13,14 @@
 
              <table class="table">
             <div class="form-group">
+              <h1> MAke Your payment<h1>
              <tr> <label for="id">Book Id:</label> {{$book->id}} <br></tr>
               <tr> <label for="id">Book Title:</label> {{$book->name}}<br></tr>
               <tr><label for="id">Book Category:</label> {{$book->category}}<br></tr>
               <tr><label for="id">Author Name:</label> {{$book->author}}<br></tr>
               <tr><label for="id">Book Price:</label> {{$book->price}}<br></tr>
               <button type = "submit" class = "btn btn-success">Buy</button>
-            </table>>
+            </table>
 
 
             </div>

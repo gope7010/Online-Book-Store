@@ -1,5 +1,5 @@
     @extends('layouts.master')
-    @section('title','Create Employee')
+    @section('title','Add a Book')
     @section('content')
       <div class="row mt-5">
         <div class="col-sm-8 offset-sm-2">

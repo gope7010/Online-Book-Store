@@ -1,5 +1,5 @@
     @extends('layouts.master')
-    @section('title','Employees Index')
+    @section('title','Book Home')
     @section('content')
     <a href="/admin">Back</a>
       <div class="row">
